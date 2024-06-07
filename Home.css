@@ -1,247 +1,27 @@
-*{
+* {
     padding: 0;
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+margin: 0;
+text-decoration: none;
 }
 
-#cabecalho{
-    background-color: black; 
-    color: white;
-    padding: 5rem;  
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.icons{
-    font-size: 2rem;
-}
-
-.menu{
+header {
     display: flex;
+background-color: rgb(119, 148, 201);
+padding: 5vw;
+justify-content: space-between;
 }
 
-.menu li{
-    margin-left: 1rem;
-    list-style: none;
+.menu {
+list-style: none;
+display: flex;
+gap: 2vw;
 }
 
-.menu li a{
+.menu a {
     color: white;
-    padding: 1rem;  
-    font-size: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-  
 }
 
-.menu li a:hover {
-    color: #6287d8;
-    transition: 0.8s;
-    cursor: pointer;
-}
-
-.secao-01{
-    padding: 4rem;
-    text-align: center;
-    background-color: #cae8ff;
-}
-
-.secao-01 h1{
-    padding: 1rem;
-    font-size: 3rem;
-    color: rgba(0, 0, 0, 0.767);
-}
-
-.secao-01 p{
-    font-size: 1.3rem;
-}
-
-.linha{
-    width: 70%;
-    margin: 45px auto;
- }
-
-.div-pai{
-    align-items: center;
-    padding: 4rem;
-    display: flex;
-    justify-content: space-between;
-    background: rgb(202,232,255);
-background: linear-gradient(180deg, rgba(202,232,255,1) 0%, rgba(124,159,226,1) 77%);
-}
-
-.div-pai img{
-    border-radius: 2rem;
-    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.459);
-}
-
-.div-pai h2{
-    font-size: 3rem;
-    text-align: center;
-    margin-left: 1rem;
-    color: rgba(0, 0, 0, 0.767);
-}
-
-.div-pai p{
-    margin: 2rem;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.secao-02{
-    padding: 4rem;
-    text-align: center;
-    background-color: #cae8ff;
-}
-
-.secao-02 h2{
-    padding: 1rem;
-    font-size: 3rem;
-    color: rgba(0, 0, 0, 0.767);
-}
-
-.secao-02 ul{
-    margin: 1rem auto;
-}
-
-.secao-02 li{
-    font-size: 1.3rem;
-    padding: 0.5rem;
-}
-
-.secao{
-    background: #cae8ff;
-    padding: 4rem;
-}
-
-.secao h2{
-    font-size: 3em; 
-    color: rgba(0, 0, 0, 0.767);
-}
-
-.secao p{
-    font-size: 2em;
-    margin: 20px 0;
-}
-
-.secao button{
-    padding: 2rem; 
-    border-color:#6287d8;
-    color:#6287d8;
-    border-radius: 5rem;
-    width: 20rem;
-    font-size: 1rem;
-    box-shadow: 7px 7px 7px  rgba(0, 0, 0, 0.425);
-    cursor: pointer;
-}
-
-.secao button:hover{
-    border-color:#6287d8 ;
-    background-color:#cae8ff; 
-    color: white;
-    transition: 0.8s;
-}
-
-.secao button a{
-    text-decoration: none;  
-    color:  #6287d8; 
-    font-size: 1.3rem; 
-}
-
-
-
-
-
-
-
-
-
-
-
-#container {
-    padding: 15rem; 
-    background-color:  rgb(226, 233, 233); 
- }
-
-#container h2 {
-   font-size: 4rem;
-   text-align: center;  
-   color: rgba(7, 7, 99, 0.697); 
-   margin-top: -20rem ; 
-   margin-bottom: 2rem;  
-}
-
-#container p{
-    font-size: 1.3rem;
-    color: rgb(34, 34, 74);
-    margin-bottom: 4rem; 
-    text-align: justify; 
-}
-
-#container button{
-    padding: 2rem;
-    border-radius: 5rem; 
-    width: 15vw; 
-    color: rgb(50, 50, 226); 
-    border-color: rgb(50, 50, 226);
-    margin: 6rem; 
-    font-size: 11rempx;  
-    box-shadow: 7px 7px 7px  rgba(0, 0, 0, 0.342);
-}
-
-#container button:hover{
-    background-color: rgb(50, 50, 226); 
-    color: white;
-    border-color: white;
-    transition: 0.7s; 
-    cursor: pointer;
-}
-
-.linha{
-    width: 70%; 
-    margin: 4rem auto; 
-}
-
-
-
-
-
-
-#container-cofre {
-    background: url(img-home/img\ cofre\ fundo.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 7rem;
-}
-
-#container-cofre img{
-    width: 24rem;
-    height: auto; 
-    margin-top: 1rem;
+#intro {
+padding: ;
 
 }
-
-#container-cofre h2{
-    color: rgba(0, 0, 0, 0.712);
-    font-size: 3rem;
-    text-align: center;
-}
-
-#container-cofre p{
-    color: rgba(0, 0, 0, 0.712);
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-left: 1rem;
-    font-weight: 800;
-}
-
-
-
-
-
