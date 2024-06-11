@@ -1,39 +1,81 @@
 * {
     padding: 0;
-margin: 0;
-text-decoration: none;
+    margin: 0;
+    text-decoration: none;
 }
 
 header {
+padding: 3vw 10vw;
+background-color: lightgray;
+}
+
+#bloco-header {
+    background-color: rgba(128, 128, 128, 0.815);
+    padding: 1.5vw;
+    border-radius: 20vw;
     display: flex;
-background-color: rgb(119, 148, 201);
-padding: 5vw;
-justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bloco-header img {
+    width: 5vw;
+    height: 5vw;
+background-color: white;
 }
 
 .menu {
-list-style: none;
-display: flex;
-gap: 2vw;
+    display: flex;
+    gap: 5vw;
+    list-style: none;
 }
 
 .menu a {
     color: white;
 }
 
-#intro {
-padding: 5vw;
-
+#bloco-header button {
+background-color: red;
+padding: 1vw;
+border-radius: 20vw;
+width: 10vw;
+color: white;
+border: none;
 }
 
-#intro h1, p {
-width: 50vw;
+#bloco-header button i{
+    margin-right: 7px;
 }
 
-#intro h1 {
-font-size: 50px;
+#carrossel {
+    padding: 10vw;
+    background-color: white;
 }
 
-#intro p {
+#cursos {
+background-color: gray;
+padding: 5vw 3vw;
+}
+
+#blocos {
+display: flex;
+justify-content: space-evenly;
+padding: 7vw 0vw;
+}
+
+#blocos div {
+background-color: rgb(233, 189, 189);
+padding: 2vw;
+width: 10vw;
+border-radius: 20px 20px 0px 0px;
+text-align: center;
+}
+
+#blocos img {
+width: 100%;
+margin-bottom: 20px;
+}
+
+#blocos p {
 font-size: 20px;
 }
