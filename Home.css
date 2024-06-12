@@ -143,11 +143,11 @@ footer {
 
 .redes {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     font-size: 30px;
 }
 
-.redes {
+.redes i {
     color:white;
 }
 
