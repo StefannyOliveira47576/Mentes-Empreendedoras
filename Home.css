@@ -102,6 +102,55 @@ font-size: 20px;
 color: white;
 }
 
+/* Footer será igual em todas as páginas */
+footer {
+    display: flex;
+}
+
+#guias {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    padding: 5vw 4vw;
+    
+}
+
+#guias div {
+    display: flex;
+    padding: 1vw;
+    width: 15vw;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#guias img {
+    width: 3vw;
+    border-radius: 20vw;
+}
+
+#redes {
+    display: flex;
+    padding: 4vw 6vw;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    justify-content: space-evenly;
+    gap: 10vw;
+}
+
+.text {
+    
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.redes {
+    color:white;
+}
+
 #direitos {
     background: linear-gradient(90deg, rgb(255, 55, 55) 10%, #305ff7 90%), url(imgs/bg\ biblio.png);
     padding: 0.5vw;
