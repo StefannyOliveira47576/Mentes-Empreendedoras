@@ -35,7 +35,7 @@ background-color: white;
 }
 
 #bloco-header button {
-background-color: red;
+background-color: #F97E7E;
 padding: 1vw;
 border-radius: 20vw;
 width: 10vw;
@@ -68,7 +68,7 @@ padding: 5vw 3vw;
 }
 
 #cursos button {
-    background-color: red;
+    background-color: #F97E7E;
 padding: 1vw;
 border-radius: 20vw;
 width: 18vw;
@@ -108,7 +108,7 @@ footer {
 }
 
 #guias {
-    background-color: rgb(54, 54, 54);
+    background-color: #4F4F4F;
     color: white;
     padding: 5vw 4vw;
     
@@ -131,7 +131,7 @@ footer {
 #redes {
     display: flex;
     padding: 4vw 6vw;
-    background-color: rgb(83, 83, 83);
+    background-color: #676767;
     color: white;
     justify-content: space-evenly;
     gap: 10vw;
