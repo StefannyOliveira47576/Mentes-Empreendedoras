@@ -144,13 +144,13 @@ footer {
 
 .text {}
 
-.redes {
+#contatos {
     display: flex;
     gap: 20px;
     font-size: 30px;
 }
 
-.redes i {
+#contatos i {
     color: white;
 }
 
