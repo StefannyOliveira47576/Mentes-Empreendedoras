@@ -7,11 +7,11 @@
 
 header {
     padding: 3vw 10vw;
-    background-color: lightgray;
+    background-color: #193894;
 }
 
 #bloco-header {
-    background-color: rgba(128, 128, 128, 0.815);
+    background-color: #7C9EDC;
     padding: 1.5vw;
     border-radius: 20vw;
     display: flex;
@@ -34,6 +34,20 @@ header {
 .menu a {
     color: white;
 }
+
+#bloco-header button {
+    background-color: #DB7373;
+    padding: 1vw;
+    border-radius: 20vw;
+    width: 10vw;
+    color: white;
+    border: none;
+}
+
+#bloco-header button i {
+    margin-right: 7px;
+}
+
 
 .section-01 {
     padding: 4rem;
