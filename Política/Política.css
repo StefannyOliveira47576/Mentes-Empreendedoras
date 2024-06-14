@@ -7,6 +7,7 @@
 
 header {
     padding: 3vw 10vw;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     background-color: lightgray;
 =======
@@ -15,6 +16,12 @@ header {
 }
 
 #bloco-header { 
+=======
+    background-color: #193894;
+}
+
+#bloco-header {
+>>>>>>> cae12bebcdaafdef010f0a7d3f979bd753c36732
     background-color: #7C9EDC;
     padding: 1.5vw;
     border-radius: 20vw;
@@ -39,7 +46,24 @@ header {
     color: white;
 }
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+#bloco-header button {
+    background-color: #DB7373;
+    padding: 1vw;
+    border-radius: 20vw;
+    width: 10vw;
+    color: white;
+    border: none;
+}
+
+#bloco-header button i {
+    margin-right: 7px;
+}
+
+
+>>>>>>> cae12bebcdaafdef010f0a7d3f979bd753c36732
 .section-01 {
     padding: 4rem;
     background: linear-gradient(180deg, rgba(136,135,145,0.8995973389355743) 3%, rgba(41, 37, 37, 0.886) 100%), url(img/Politica\ de\ Privacidade\ \(Sem\ fundo\).png);
