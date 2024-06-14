@@ -7,11 +7,15 @@
 
 header {
     padding: 3vw 10vw;
+<<<<<<< Updated upstream
     background-color: lightgray;
+=======
+    background-color: #193894;
+>>>>>>> Stashed changes
 }
 
-#bloco-header {
-    background-color: rgba(128, 128, 128, 0.815);
+#bloco-header { 
+    background-color: #7C9EDC;
     padding: 1.5vw;
     border-radius: 20vw;
     display: flex;
@@ -35,6 +39,7 @@ header {
     color: white;
 }
 
+<<<<<<< Updated upstream
 .section-01 {
     padding: 4rem;
     background: linear-gradient(180deg, rgba(136,135,145,0.8995973389355743) 3%, rgba(41, 37, 37, 0.886) 100%), url(img/Politica\ de\ Privacidade\ \(Sem\ fundo\).png);
@@ -129,7 +134,64 @@ footer {
 #direitos {
     background: linear-gradient(90deg, rgb(255, 55, 55) 10%, #305ff7 90%), url(imgs/bg\ biblio.png);
     padding: 0.5vw;
-    text-align: center;
-    color: white;
+=======
+.menu a:hover{
+    color: #FDDFAF;
+    transition: 0.8s;
+}
 
+.section-01{
+    padding: 4rem;
+    background-color: #FDDFAF;
+}
+
+.section-01 h1{
+>>>>>>> Stashed changes
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem
+}
+
+.section-01 p{
+    font-size: 1.2rem;
+}
+
+.list{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+#section-02{
+    color: white;
+<<<<<<< Updated upstream
+
+=======
+    background-color: #193894;
+    padding: 5rem;
+    display: flex;
+}
+
+#img{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.658);
+    margin-right: 2rem;
+}
+
+#text{
+    margin-left: 1rem;
+}
+
+#text h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#text p{
+     font-size: 1.2rem;
+}
+
+#text ul{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+>>>>>>> Stashed changes
 }
