@@ -53,7 +53,7 @@ header {
 .sessao-02 {
         padding: 4rem;
         background-color: rgba(128, 128, 128, 0.719);
-        text-align: justify;
+        text-align: center;
         font-size: 1rem;
         line-height: 35px;
 }
@@ -114,7 +114,7 @@ footer {
     gap: 10vw;
 }
 
-.text {}
+
 
 .redes {
     display: flex;
