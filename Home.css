@@ -153,8 +153,6 @@ footer {
     gap: 10vw;
 }
 
-.text {}
-
 #contatos {
     display: flex;
     gap: 20px;
