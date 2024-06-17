@@ -1,6 +1,18 @@
-header {
-    padding: 3vw 10vw;
-    background-color: #193894;
+/* CORES:
+Azul Escuro: 193894
+Azul Claro: 7C9EDC
+Laranja: FF8D0A
+Laranja claro: FDDFAF
+Amarelo: FFFFAC
+
+Vermelho: 4F4F4F
+Cinza Escuro: 676767
+Cinza: DB7373 */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
 
 header {
@@ -23,23 +35,28 @@ header {
     background-color: white;
 }
 
-.menu{
+.menu {
     display: flex;
     gap: 5vw;
-    
     list-style: none;
 }
 
 .menu a {
     color: white;
-    text-decoration: none;
 }
 
-.menu a:hover{
-    color: #FDDFAF;
-    transition: 0.8s;
+#bloco-header button {
+    background-color: #DB7373;
+    padding: 1vw;
+    border-radius: 20vw;
+    width: 10vw;
+    color: white;
+    border: none;
 }
 
+#bloco-header button i {
+    margin-right: 7px;
+}
 
 .section-01{
     padding: 4rem;
@@ -157,23 +174,25 @@ footer {
 
 #guias {
     background-color: #4F4F4F;
-    color: white;
     padding: 5vw 4vw;
-
 }
 
-#guias div {
-    display: flex;
+#guias div a {
     padding: 1vw;
-    width: 15vw;
+    width: 20vw;
     gap: 1vw;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    display: flex;
 }
 
 #guias img {
     width: 3vw;
     border-radius: 20vw;
+}
+
+#guias a {
+    color: white;
 }
 
 #redes {
@@ -183,6 +202,7 @@ footer {
     color: white;
     justify-content: space-evenly;
     gap: 10vw;
+    align-items: center;
 }
 
 #contatos {
@@ -191,7 +211,7 @@ footer {
     font-size: 30px;
 }
 
-#contatos i{
+#contatos i {
     color: white;
 }
 
