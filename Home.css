@@ -125,23 +125,25 @@ footer {
 
 #guias {
     background-color: #4F4F4F;
-    color: white;
     padding: 5vw 4vw;
-
 }
 
-#guias div {
-    display: flex;
+#guias div a {
     padding: 1vw;
-    width: 15vw;
+    width: 20vw;
     gap: 1vw;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    display: flex;
 }
 
 #guias img {
     width: 3vw;
     border-radius: 20vw;
+}
+
+#guias a {
+    color: white;
 }
 
 #redes {
@@ -151,6 +153,7 @@ footer {
     color: white;
     justify-content: space-evenly;
     gap: 10vw;
+    align-items: center;
 }
 
 #contatos {
