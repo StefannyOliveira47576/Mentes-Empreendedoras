@@ -137,9 +137,11 @@ footer {
     display: flex;
 }
 
-#guias img {
-    width: 3vw;
-    border-radius: 20vw;
+#guias i {
+    font-size: 25px;
+    text-align: center;
+    width: 20vw;
+    color: #ffffff;
 }
 
 #guias a {
@@ -173,68 +175,39 @@ footer {
     color: white;
 }
 
-
-
-
-
-
-
 /* começando o carrossel */
-
-
-.carrossel{
+.carrossel {
     position: relative;
-width: 100%;
-overflow: hidden;
-
-
+    width: 100%;
+    overflow: hidden;
 }
 
 
-    .carrossel-slide{
-display: inline-block;
-width: 100%;
+.carrossel-slide {
+    display: inline-block;
+    width: 100%;
+}
 
-    }
+.carrossel-slide img {
+    display: inline-block;
+    width: 100%;
+}
 
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
 
-
-    .carrossel-slide img{
-
-display: inline-block;
-
-width: 100%;
-  
-    }
-
-
-    #prevBtn , #nextBtn{
-
-
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #333;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-    }
-
-#prevBtn{
+#prevBtn {
     left: 10px;
 }
 
-
-
-#nextBtn{
-
-
-right: 10px;
-
+#nextBtn {
+    right: 10px;
 }
-
-
-
-
-
