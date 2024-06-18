@@ -29,57 +29,71 @@
     </header>
 
     <main>
-        <section id="carrossel">
-            <h2>Sei lá & Sei lá</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Animi aliquam, libero vel facere quae hic
-                perspiciatis quibusdam architecto odio cumque itaque eum
-                eius consequuntur recusandae sapiente repellat
-                reiciendis, molestias at?</p>
+        <section>
+            <div class="carrossel">
 
-            <a href><button>Leia mais</button></a>
-        </section>
-
-        <section id="cursos">
-            <div class="titulo">
-                <h2>Áreas de Conhecimento</h2>
-                <p>Construa seu futuro da melhor maneira!</p>
-            </div>
-
-            <div id="blocos">
-                <div>
-                    <img src="imagens/Placeholder.jpg" alt>
-                    <p>Administração</p>
+                <div class="carrossel-slide">
+                    <img src="imagens/Homem-de-Ferro-voando.jpg" alt="">
                 </div>
 
-                <div>
-                    <img src="imagens/Placeholder.jpg" alt>
-                    <p>Recursos Humanos</p>
+                <div class="carrossel-slide">
+                    <img src="imagens/Parceiros/painel-em-lona-homem-aranha-papel-de-parede-safari-infantil.webp"
+                        alt="">
                 </div>
 
-                <div>
-                    <img src="imagens/Placeholder.jpg" alt>
-                    <p>Programação & Dados</p>
+                <div class="carrossel-slide">
+                    <img src="imagens/Parceiros/itau.png" alt="">
                 </div>
 
-                <div>
-                    <img src="imagens/Placeholder.jpg" alt>
-                    <p>Design</p>
-                </div>
-
-                <div>
-                    <img src="imagens/Placeholder.jpg" alt>
-                    <p>Marketing</p>
-                </div>
-
-                <div>
-                    <img src="imagens/Placeholder.jpg" alt>
-                    <p>Moda</p>
+                <div class="carrossel-slide">
+                    <img src="imagens/Parceiros/maicrosofit.jpg" alt="">
                 </div>
             </div>
+            <button id="prevBtn" onclick="showSlide(index-1 )">Anterior</button>
+            <button id="nextBtn" onclick="showSlide(index+1)">Próximo</button>
+    </main>
+    </section>
 
-            <a href><button>Mostrar todos os cursos</button></a>
-        </section>
+    <section id="cursos">
+        <div class="titulo">
+            <h2>Áreas de Conhecimento</h2>
+            <p>Construa seu futuro da melhor maneira!</p>
+        </div>
+
+        <div id="blocos">
+            <div>
+                <img src="imagens/Placeholder.jpg" alt>
+                <p>Administração</p>
+            </div>
+
+            <div>
+                <img src="imagens/Placeholder.jpg" alt>
+                <p>Recursos Humanos</p>
+            </div>
+
+            <div>
+                <img src="imagens/Placeholder.jpg" alt>
+                <p>Programação & Dados</p>
+            </div>
+
+            <div>
+                <img src="imagens/Placeholder.jpg" alt>
+                <p>Design</p>
+            </div>
+
+            <div>
+                <img src="imagens/Placeholder.jpg" alt>
+                <p>Marketing</p>
+            </div>
+
+            <div>
+                <img src="imagens/Placeholder.jpg" alt>
+                <p>Moda</p>
+            </div>
+        </div>
+
+        <a href><button>Mostrar todos os cursos</button></a>
+    </section>
     </main>
 
     <footer>
@@ -287,7 +301,7 @@
 
 
 
-
+    <script src="home.js"></script>
 
 </body>
 
