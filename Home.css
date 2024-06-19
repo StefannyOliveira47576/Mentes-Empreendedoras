@@ -30,9 +30,7 @@ header {
 }
 
 #bloco-header img {
-    width: 5vw;
-    height: 5vw;
-    background-color: white;
+    width: 10vw;
 }
 
 .menu {
@@ -82,17 +80,17 @@ header {
     color: #7C9EDC;
 }
 
-#cursos button {
+.btn_mostraCursos {
     background-color: #F97E7E;
-    padding: 1vw;
+     padding: 1vw;
     border-radius: 20vw;
     width: 18vw;
     color: white;
     border: none;
     margin-left: 8vw;
-    font-size: 18px;
+    font-size: 18px; 
 }
-
+/* 
 #blocos {
     display: flex;
     justify-content: space-evenly;
@@ -106,7 +104,7 @@ header {
     border-radius: 20px 20px 0px 0px;
     text-align: center;
     box-shadow: 6px 10px 1px rgba(1, 14, 88, 0.651);
-}
+} */
 
 #blocos img {
     width: 100%;
@@ -137,9 +135,11 @@ footer {
     display: flex;
 }
 
-#guias img {
-    width: 3vw;
-    border-radius: 20vw;
+#guias i {
+    font-size: 25px;
+    text-align: center;
+    width: 20vw;
+    color: #ffffff;
 }
 
 #guias a {
@@ -173,68 +173,39 @@ footer {
     color: white;
 }
 
-
-
-
-
-
-
 /* começando o carrossel */
-
-
-.carrossel{
+.carrossel {
     position: relative;
-width: 100%;
-overflow: hidden;
-
-
+    width: 100%;
+    overflow: hidden;
 }
 
 
-    .carrossel-slide{
-display: inline-block;
-width: 100%;
+.carrossel-slide {
+    display: inline-block;
+    width: 100%;
+}
 
-    }
+.carrossel-slide img {
+    display: inline-block;
+    width: 100%;
+}
 
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
 
-
-    .carrossel-slide img{
-
-display: inline-block;
-
-width: 100%;
-  
-    }
-
-
-    #prevBtn , #nextBtn{
-
-
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #333;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-    }
-
-#prevBtn{
+#prevBtn {
     left: 10px;
 }
 
-
-
-#nextBtn{
-
-
-right: 10px;
-
+#nextBtn {
+    right: 10px;
 }
-
-
-
-
-
