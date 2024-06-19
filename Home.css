@@ -30,9 +30,7 @@ header {
 }
 
 #bloco-header img {
-    width: 5vw;
-    height: 5vw;
-    background-color: white;
+    width: 10vw;
 }
 
 .menu {
