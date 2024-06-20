@@ -80,6 +80,19 @@ header {
     color: #7C9EDC;
 }
 
+#cursos button {
+        background-color: #F97E7E;
+        padding: 1vw;
+         padding: 1vw;
+        border-radius: 20vw;
+        width: 18vw;
+        color: white;
+        border: none;
+        margin-left: 8vw;
+        font-size: 18px;
+        font-size: 18px; 
+}
+
 .btn_mostraCursos {
     background-color: #F97E7E;
      padding: 1vw;
@@ -90,7 +103,7 @@ header {
     margin-left: 8vw;
     font-size: 18px; 
 }
-/* 
+ 
 #blocos {
     display: flex;
     justify-content: space-evenly;
@@ -104,7 +117,7 @@ header {
     border-radius: 20px 20px 0px 0px;
     text-align: center;
     box-shadow: 6px 10px 1px rgba(1, 14, 88, 0.651);
-} */
+}
 
 #blocos img {
     width: 100%;
