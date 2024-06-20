@@ -88,12 +88,16 @@ h3 span {
     line-height: 35px;
 }
 
-#missao-visao-valores {
+/* #missao-visao-valores {
     padding: 2rem;
-}
+    background-image: url(imagens/Missão\,\ Visão\ e\ Valores.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 
 #missao-visao-valores h3 {
-    margin-left: 29px;
+    margin-left: 60px;
     font-size: 1.8rem;
     margin-bottom: 2px;
     margin-top: 10px;
@@ -102,19 +106,28 @@ h3 span {
 #missao-visao-valores p {
     text-align: justify;
     font-size: 1.5rem;
-    margin: 0 29px;
+    margin: 0 60px;
     line-height: 35px;
 }
 
 #missao-visao-valores ul li {
     text-align: justify;
     font-size: 1.5rem;
-    margin: 0 29px;
+    margin: 0 60px;
     line-height: 35px;
+}
+
+#missao-visao-valores img{
+  margin-left: 300px;
+  margin-top: -35px;
 }
 
 #objetivo {
     padding: 2rem;
+}
+
+#objetivo h2 {
+    margin-top: -40px;
 }
 
 #objetivo p{
