@@ -6,6 +6,7 @@
     <title>Mentes Empreendedoras | Academia</title>
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="styleCursos.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/8e63921953.js" crossorigin="anonymous"></script>
 </head>
 
@@ -106,6 +107,13 @@
 
         <a href="mostrarCursos.html"><button class="btn_mostraCursos">Mostrar todos os cursos</button></a>
     </section>
+    <script>
+        window.revelar = ScrollReveal({reset:true});
+revelar.reveal('.div-card', {
+    duration: 3000,
+    distance: '150px'
+});
+    </script>
     </main>
 
 
@@ -159,7 +167,7 @@
         <p>Copyright © 2024 | Todos os direitos reservados</p>
     </div>
 
-    <script src="Home.js"></script>
+    <script src="home.js"></script>
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
