@@ -154,3 +154,10 @@ header /*header basico da pagina*/
     .ebook-button:hover {
         background-color: #218838;
     }
+
+    .div-card {
+        display: none; /*  Ocultar todos os cartões inicialmente*/
+    }
+    .div-card.show {
+        display: block; /* Show cards that match the search query */
+    }

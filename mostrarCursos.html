@@ -27,6 +27,7 @@
                 <button><i class="fa-solid fa-user"></i>Login</button>
             </a>
         </div>
+        <input type="text" id="searchInput" placeholder="Pesquisar curso..." onkeyup="filterCourses()">
     </header>
 <!-- Aqui criei uma div para receber a pagina em poupup modal -->
     <div id="myModal" class="modal">
@@ -45,42 +46,42 @@
         </div>
 
         <main class="course-container">
-            <div class="div-card">
+            <div class="div-card show">
                 <i class="fas fa-briefcase"></i>
                 <h2>Administração</h2>
                 <p>Curso focado em técnicas de gestão e administração de empresas.</p>
                 <p><strong>Carga Horária:</strong> 40 horas</p>
                 <button id="openModalBtnAdm">Saiba Mais</button>
             </div>
-            <div class="div-card">
+            <div class="div-card show">
                 <i class="fas fa-users"></i>
                 <h2>Recursos Humanos</h2>
                 <p>Formação em gestão de pessoas e processos de RH.</p>
                 <p><strong>Carga Horária:</strong> 35 horas</p>
                 <button id="openModalBtnRh">Saiba Mais</button>
             </div>
-            <div class="div-card">
+            <div class="div-card show">
                 <i class="fas fa-code"></i>
                 <h2>Programação e Dados</h2>
                 <p>Desenvolvimento de habilidades em programação e análise de dados.</p>
                 <p><strong>Carga Horária:</strong> 50 horas</p>
                 <button id="openModalBtnPd">Saiba Mais</button>
             </div>
-            <div class="div-card">
+            <div class="div-card show">
                 <i class="fas fa-paint-brush"></i>
                 <h2>Designer</h2>
                 <p>Curso sobre fundamentos e técnicas de design.</p>
                 <p><strong>Carga Horária:</strong> 45 horas</p>
                 <button id="openModalBtnDs">Saiba Mais</button>
             </div>
-            <div class="div-card">
+            <div class="div-card show">
                 <i class="fas fa-bullhorn"></i>
                 <h2>Marketing</h2>
                 <p>Estratégias e ferramentas para o marketing digital e tradicional.</p>
                 <p><strong>Carga Horária:</strong> 30 horas</p>
                 <button id="openModalBtnMk">Saiba Mais</button>
             </div>
-            <div class="div-card">
+            <div class="div-card show">
                 <i class="fas fa-tshirt"></i>
                 <h2>Moda</h2>
                 <p>Curso sobre tendências, design e gestão na área de moda.</p>
@@ -123,6 +124,27 @@
             </div>
         </div>
     </footer>
+
+        
+    <script>
+        function filterCourses() {
+            var input, filter, cards, cardContainer, h2, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            cardContainer = document.getElementsByClassName('course-container')[0];
+            cards = cardContainer.getElementsByClassName('div-card');
+
+            for (i = 0; i < cards.length; i++) {
+                h2 = cards[i].getElementsByTagName('h2')[0];
+                txtValue = h2.textContent || h2.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].classList.add('show');
+                } else {
+                    cards[i].classList.remove('show');
+                }
+            }
+        }
+    </script>
 
     <div id="direitos">
         <p>Copyright © 2024 | Todos os direitos reservados</p>
