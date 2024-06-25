@@ -1,8 +1,6 @@
 let slideIndex = 0;
 
-constslides = document.querySelectorAll('.carousel-slide');
-
-
+const slides = document.querySelectorAll('.carrosel-slide');
 const totalSlides = slides.length;
 
 // Função para mostrar o slide atual
@@ -16,11 +14,7 @@ function showSlide(index) {
     }
 
     slides.forEach((slide, i) => {
-        if (i === slideIndex) {
-            slide.style.display = 'block';
-        } else {
-            slide.style.display = 'none';
-        }
+        slide.style.display = i === slideIndex ? 'block' : 'none';
     });
 }
 
@@ -35,7 +29,6 @@ document.getElementById('prevBtn').addEventListener('click', () => {
 document.getElementById('nextBtn').addEventListener('click', () => {
     showSlide(slideIndex + 1);
 });
-
 
 
 

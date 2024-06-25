@@ -193,10 +193,10 @@ footer {
     overflow: hidden;
 }
 
+.carrosel-slide:first-child {
 
-.carrossel-slide {
-    display: inline-block;
-    width: 100%;
+    display: block;
+
 }
 
 .carrossel-slide img {
