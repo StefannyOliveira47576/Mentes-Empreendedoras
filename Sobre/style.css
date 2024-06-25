@@ -213,6 +213,7 @@ h3 span {
     background-color: black;
 }
 
+/* Footer será igual em todas as páginas */
 footer {
     display: flex;
 }
@@ -222,24 +223,24 @@ footer {
     padding: 5vw 4vw;
 }
 
+#guias div {
+margin: auto;
+}
+
 #guias div a {
-    padding: 1vw;
-    width: 20vw;
+    padding: 1vw 0vw;
     gap: 1vw;
-    align-items: center;
-    justify-content: left;
+    color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
 }
 
 #guias i {
     font-size: 25px;
     text-align: center;
-    width: 20vw;
     color: #ffffff;
-}
-
-#guias a {
-    color: white;
 }
 
 #redes {
