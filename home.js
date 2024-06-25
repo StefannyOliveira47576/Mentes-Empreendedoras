@@ -29,6 +29,3 @@ document.getElementById('prevBtn').addEventListener('click', () => {
 document.getElementById('nextBtn').addEventListener('click', () => {
     showSlide(slideIndex + 1);
 });
-
-
-
