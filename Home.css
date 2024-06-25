@@ -15,6 +15,7 @@ Cinza: DB7373 */
     text-decoration: none;
 }
 
+/* Header será igual em todas as páginas*/
 header {
     padding: 3vw 10vw;
     background-color: #193894;
@@ -56,11 +57,53 @@ header {
     margin-right: 7px;
 }
 
+/* Fim do Header */
+
+/* Começando o carrossel */
 #carrossel {
     padding: 10vw;
     background-color: white;
 }
 
+.carrossel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrossel-slide {
+    display: inline-block;
+    width: 100%;
+}
+
+.carrossel-slide img {
+    display: inline-block;
+    width: 100%;
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+/* Fim do Carrossel */
+
+/* Seção: cursos */
 #cursos {
     background-color: #193894;
     padding: 5vw 3vw;
@@ -81,29 +124,29 @@ header {
 }
 
 #cursos button {
-        background-color: #F97E7E;
-        padding: 1vw;
-         padding: 1vw;
-        border-radius: 20vw;
-        width: 18vw;
-        color: white;
-        border: none;
-        margin-left: 8vw;
-        font-size: 18px;
-        font-size: 18px; 
-}
-
-.btn_mostraCursos {
     background-color: #F97E7E;
-     padding: 1vw;
+    padding: 1vw;
+    padding: 1vw;
     border-radius: 20vw;
     width: 18vw;
     color: white;
     border: none;
     margin-left: 8vw;
-    font-size: 18px; 
+    font-size: 18px;
+    font-size: 18px;
 }
- 
+
+.btn_mostraCursos {
+    background-color: #F97E7E;
+    padding: 1vw;
+    border-radius: 20vw;
+    width: 18vw;
+    color: white;
+    border: none;
+    margin-left: 8vw;
+    font-size: 18px;
+}
+
 #blocos {
     display: flex;
     justify-content: space-evenly;
@@ -128,6 +171,7 @@ header {
     font-size: 20px;
     color: white;
 }
+/* Fim da Seção: cursos */
 
 /* Footer será igual em todas as páginas */
 footer {
@@ -139,24 +183,24 @@ footer {
     padding: 5vw 4vw;
 }
 
+#guias div {
+margin: auto;
+}
+
 #guias div a {
-    padding: 1vw;
-    width: 20vw;
+    padding: 1vw 0vw;
     gap: 1vw;
-    align-items: center;
-    justify-content: left;
+    color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
 }
 
 #guias i {
     font-size: 25px;
     text-align: center;
-    width: 20vw;
     color: #ffffff;
-}
-
-#guias a {
-    color: white;
 }
 
 #redes {
@@ -184,6 +228,7 @@ footer {
     padding: 0.5vw;
     text-align: center;
     color: white;
+<<<<<<< HEAD
 }
 
 /* começando o carrossel */
@@ -221,4 +266,6 @@ footer {
 
 #nextBtn {
     right: 10px;
+=======
+>>>>>>> f9c985d9942d38c1451dd26c5ef10ef55672c07b
 }

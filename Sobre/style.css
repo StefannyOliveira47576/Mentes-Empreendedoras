@@ -1,3 +1,14 @@
+/* CORES:
+Azul Escuro: 193894
+Azul Claro: 7C9EDC
+Laranja: FF8D0A
+Laranja claro: FDDFAF
+Amarelo: FFFFAC
+
+Vermelho: 4F4F4F
+Cinza Escuro: 676767
+Cinza: DB7373 */
+
 * {
     padding: 0;
     margin: 0;
@@ -202,6 +213,7 @@ h3 span {
     background-color: black;
 }
 
+/* Footer será igual em todas as páginas */
 footer {
     display: flex;
 }
@@ -211,24 +223,24 @@ footer {
     padding: 5vw 4vw;
 }
 
+#guias div {
+margin: auto;
+}
+
 #guias div a {
-    padding: 1vw;
-    width: 20vw;
+    padding: 1vw 0vw;
     gap: 1vw;
-    align-items: center;
-    justify-content: left;
+    color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
 }
 
 #guias i {
     font-size: 25px;
     text-align: center;
-    width: 20vw;
     color: #ffffff;
-}
-
-#guias a {
-    color: white;
 }
 
 #redes {
