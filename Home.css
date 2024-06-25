@@ -185,16 +185,16 @@ footer {
 
 #guias div {
 margin: auto;
-width: 20vw;
-
 }
 
 #guias div a {
     padding: 1vw 0vw;
     gap: 1vw;
-    align-items: center;
-    display: flex;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
 }
 
 #guias i {
