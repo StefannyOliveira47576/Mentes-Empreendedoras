@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentes Empreendedoras | Academia</title>
     <link rel="shortcut icon" href="imagens/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="Home.css">
-    <link rel="stylesheet" href="styleCursos.css">
+    <!-- <link rel="stylesheet" href="styleCursos.css"> -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/8e63921953.js" crossorigin="anonymous"></script>
 </head>
 
 <!-- Igual em todas as páginas -->
+
 <body>
     <header>
         <div id="bloco-header">
@@ -50,12 +52,11 @@
                     <img src="imagens/Carrossel/Banners-Carrossel 4.png" alt="Cursos interativos">
                 </div>
             </div>
-            <button id="prevBtn" >Anterior</button>
-            <button id="nextBtn" >Próximo</button>
-    
-    </section>
-</main>
+            <button id="prevBtn">Anterior</button>
+            <button id="nextBtn">Próximo</button>
 
+        </section>
+    </main>
 
     <section id="cursos">
         <div class="titulo">
@@ -63,7 +64,7 @@
             <p>Construa seu futuro da melhor maneira!</p>
         </div>
 
-        <main class="course-container">
+        <div class="container-card">
             <div class="div-card">
                 <i class="fas fa-briefcase"></i>
                 <h2>Administração</h2>
@@ -106,20 +107,20 @@
                 <p><strong>Carga Horária:</strong> 25 horas</p>
                 <button onclick="location.href='moda.html'">Saiba Mais</button>
             </div>
-        </main>
+        </div>
 
-        <a href="mostrarCursos.html"><button class="btn_mostraCursos">Mostrar todos os cursos</button></a>
+        <a href="mostrarCursos.html"><button class="button">Mostrar todos os cursos</button></a>
+        
+        <script>
+            window.revelar = ScrollReveal({ reset: true });
+            revelar.reveal('.div-card', {
+                duration: 3000,
+                distance: '150px'
+            });
+        </script>
     </section>
-    <script>
-        window.revelar = ScrollReveal({reset:true});
-revelar.reveal('.div-card', {
-    duration: 3000,
-    distance: '150px'
-});
-    </script>
-    </main>
 
-<!-- Igual em todas as páginas -->
+    <!-- Igual em todas as páginas -->
     <footer>
         <div id="guias">
             <div>
@@ -182,4 +183,5 @@ revelar.reveal('.div-card', {
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 </body>
+
 </html>

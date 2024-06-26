@@ -5,10 +5,41 @@ Laranja: FF8D0A
 Laranja claro: FDDFAF
 Amarelo: FFFFAC
 
-Vermelho: 4F4F4F
+Vermelho: DB7373
 Cinza Escuro: 676767
-Cinza: DB7373 */
+Cinza: 4F4F4F*/
 
+
+/* Fontes do Site */
+@font-face {
+    font-family: "Bitcheese";
+    src:
+        local("Bitcheese"),
+        url(Fontes/Bitcheese.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "NextFont";
+    src:
+        local("NextFont"),
+        url(Fontes/TheNextFont.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Dream Orphans";
+    src:
+        local("Dream Orphans"),
+        url(Fontes/Dream\ Orphans.otf) format('opentype');
+}
+
+@font-face {
+    font-family: "Soul";
+    src:
+        local("LT Soul"),
+        url(Fontes/LTSoul-Regular.otf) format('opentype');
+}
+
+/* Estilização da Página */
 * {
     padding: 0;
     margin: 0;
@@ -25,23 +56,42 @@ header {
     background-color: #7C9EDC;
     padding: 1.5vw;
     border-radius: 20vw;
-    display: flex;
+    display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 #bloco-header img {
-    width: 10vw;
+    width: 12%;
+    background-color: #ff8d0ab0;
+    border-radius: 20vw;
+    padding: 10px;
+}
+
+#bloco-header img:hover {
+    background-color: #ff8800ef;
+    padding: 10px;
+    transition: 1s;
+    color: white;
 }
 
 .menu {
     display: flex;
     gap: 5vw;
     list-style: none;
+    font-family: "Bitcheese";
 }
 
 .menu a {
     color: white;
+}
+
+.menu a:hover{
+    background-color: white;
+    padding: 0.0vw 2vw;
+    border-radius: 20vw;
+    transition: 0.5s;
+    color: #FF8D0A;
 }
 
 #bloco-header button {
@@ -51,6 +101,14 @@ header {
     width: 10vw;
     color: white;
     border: none;
+}
+
+#bloco-header button:hover{
+    background-color: white;
+    transition: 0.5s;
+    padding: 1vw;
+    width: 10vw;
+    color: #DB7373;
 }
 
 #bloco-header button i {
@@ -116,61 +174,79 @@ header {
 .titulo h2 {
     font-size: 18px;
     color: #7C9EDC;
+    font-family: "Dream Orphans";
 }
 
 .titulo p {
     font-size: 35px;
     color: #7C9EDC;
+    font-family: "NextFont";
 }
 
-#cursos button {
-    background-color: #F97E7E;
-    padding: 1vw;
-    padding: 1vw;
-    border-radius: 20vw;
-    width: 18vw;
-    color: white;
-    border: none;
-    margin-left: 8vw;
-    font-size: 18px;
-    font-size: 18px;
-}
-
-.btn_mostraCursos {
-    background-color: #F97E7E;
-    padding: 1vw;
-    border-radius: 20vw;
-    width: 18vw;
-    color: white;
-    border: none;
-    margin-left: 8vw;
-    font-size: 18px;
-}
-
-#blocos {
+/* Caixas do curso */
+.container-card {
     display: flex;
-    justify-content: space-evenly;
-    padding: 7vw 0vw;
+    flex-wrap: wrap;
+    padding: 5vw 3vw;
+    justify-content: center;
 }
 
-#blocos div {
-    background-color: #FF8D0A;
-    padding: 1.5vw;
-    width: 10vw;
-    border-radius: 20px 20px 0px 0px;
+.div-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1.5rem;
     text-align: center;
-    box-shadow: 6px 10px 1px rgba(1, 14, 88, 0.651);
+    width: 300px;
 }
 
-#blocos img {
-    width: 100%;
-    margin-bottom: 10px;
+.div-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-#blocos p {
-    font-size: 20px;
+.div-card h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: "NextFont";
+}
+
+.div-card p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-family: "Soul";
+}
+
+.div-card button {
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-family: "NextFont";
+}
+
+.div-card button:hover {
+    background-color: #555;
+}
+
+/* Estilo para o botão */
+.button {
+    background-color: #F97E7E;
+    padding: 1.5vw;
+    border-radius: 20vw;
+    width: fit-content;
     color: white;
+    border: none;
+    margin-left: 8vw;
+    font-size: 16px;
+    font-family: "NextFont";
 }
+
 /* Fim da Seção: cursos */
 
 /* Footer será igual em todas as páginas */
@@ -184,7 +260,7 @@ footer {
 }
 
 #guias div {
-margin: auto;
+    margin: auto;
 }
 
 #guias div a {
@@ -228,7 +304,7 @@ margin: auto;
     padding: 0.5vw;
     text-align: center;
     color: white;
-<<<<<<< HEAD
+    <<<<<<< HEAD
 }
 
 /* começando o carrossel */
@@ -249,7 +325,8 @@ margin: auto;
     width: 100%;
 }
 
-#prevBtn, #nextBtn {
+#prevBtn,
+#nextBtn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -266,6 +343,5 @@ margin: auto;
 
 #nextBtn {
     right: 10px;
-=======
->>>>>>> f9c985d9942d38c1451dd26c5ef10ef55672c07b
+    =======>>>>>>>f9c985d9942d38c1451dd26c5ef10ef55672c07b
 }
