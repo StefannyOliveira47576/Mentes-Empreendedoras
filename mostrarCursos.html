@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="styleCursos.css">
     <script src="https://kit.fontawesome.com/8e63921953.js" crossorigin="anonymous"></script>
+    <!-- Adicione este link no head do seu documento HTML para importar o Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
 </head>
 
 <body>
@@ -27,7 +29,14 @@
                 <button><i class="fa-solid fa-user"></i>Login</button>
             </a>
         </div>
-        <input type="text" id="searchInput" placeholder="Pesquisar curso..." onkeyup="filterCourses()">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Pesquisar curso..." onkeyup="filterCourses()">
+            <button type="button" onclick="filterCourses()">
+                <i class="fa fa-search"></i> <!-- Ícone de lupa do Font Awesome -->
+            </button>
+        </div>
+        
+        <!-- <input type="text" id="searchInput" placeholder="Pesquisar curso..." onkeyup="filterCourses()"> -->
     </header>
 <!-- Aqui criei uma div para receber a pagina em poupup modal -->
     <div id="myModal" class="modal">
