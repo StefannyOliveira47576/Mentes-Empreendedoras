@@ -1,31 +1,41 @@
-let slideIndex = 0;
+const carouselSlide = document.querySelector('.carousel-slide');
+const images = document.querySelectorAll('.carousel-slide img');
 
-const slides = document.querySelectorAll('.carrosel-slide');
-const totalSlides = slides.length;
+// Botões
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
-// Função para mostrar o slide atual
-function showSlide(index) {
-    if (index < 0) {
-        slideIndex = totalSlides - 1;
-    } else if (index >= totalSlides) {
-        slideIndex = 0;
-    } else {
-        slideIndex = index;
-    }
+let counter = 0;
+const size = images[0].clientWidth;
 
-    slides.forEach((slide, i) => {
-        slide.style.display = i === slideIndex ? 'block' : 'none';
-    });
-}
+// Movimentação inicial do slide
+carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
-// Mostrar o primeiro slide ao carregar a página
-showSlide(slideIndex);
-
-// Event listeners para os botões de navegação
-document.getElementById('prevBtn').addEventListener('click', () => {
-    showSlide(slideIndex - 1);
+// Event listeners para os botões
+nextBtn.addEventListener('click', () => {
+  if (counter >= images.length - 1) return;
+  carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+  counter++;
+  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
-document.getElementById('nextBtn').addEventListener('click', () => {
-    showSlide(slideIndex + 1);
+prevBtn.addEventListener('click', () => {
+  if (counter <= 0) return;
+  carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+  counter--;
+  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+// Loop do carousel
+carouselSlide.addEventListener('transitionend', () => {
+  if (images[counter].id === 'lastClone') {
+    carouselSlide.style.transition = 'none';
+    counter = images.length - 2;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
+  if (images[counter].id === 'firstClone') {
+    carouselSlide.style.transition = 'none';
+    counter = images.length - counter;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
 });
