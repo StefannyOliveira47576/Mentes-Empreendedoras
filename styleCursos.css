@@ -161,3 +161,31 @@ header /*header basico da pagina*/
     .div-card.show {
         display: block; /* Show cards that match the search query */
     }
+
+
+    /* aqui estiliza os campos que fazem a pesquisa cursos*/
+    
+
+
+    .search-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .search-container input[type=text] {
+        padding-right: 40px; /* Espaço para o ícone e o botão */
+        width: 250px; /* Ajuste conforme necessário */
+        box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+    }
+
+    .search-container button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        padding: 5px 10px;
+        background-color: #ccc; /* Cor de fundo do botão */
+        border: none;
+        cursor: pointer;
+    }
+
