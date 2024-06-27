@@ -86,7 +86,7 @@ header {
     color: white;
 }
 
-.menu a:hover{
+.menu a:hover {
     background-color: white;
     padding: 0.0vw 2vw;
     border-radius: 20vw;
@@ -103,7 +103,7 @@ header {
     border: none;
 }
 
-#bloco-header button:hover{
+#bloco-header button:hover {
     background-color: white;
     transition: 0.5s;
     padding: 1vw;
@@ -114,27 +114,30 @@ header {
 #bloco-header button i {
     margin-right: 7px;
 }
+
 /* Fim do Header */
 
 /* Começando o carrossel */
 .carousel-container {
     position: relative;
-    max-width: 1350px; /* ajuste conforme necessário */
+    max-width: 1350px;
+    /* ajuste conforme necessário */
     margin: auto;
     overflow: hidden;
-  }
-  
-  .carousel-slide {
+}
+
+.carousel-slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-slide img {
+}
+
+.carousel-slide img {
     width: 100%;
     object-fit: cover;
-  }
-  
-  .prev-btn, .next-btn {
+}
+
+.prev-btn,
+.next-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -144,15 +147,51 @@ header {
     padding: 10px 20px;
     cursor: pointer;
     z-index: 1;
-  }
-  
-  .prev-btn {
+}
+
+.prev-btn {
     left: 10px;
-  }
-  
-  .next-btn {
+}
+
+.next-btn {
     right: 10px;
-  }
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrosel-slide:first-child {
+    display: block;
+}
+
+.carrossel-slide img {
+    display: inline-block;
+    width: 100%;
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
 /* Fim do Carrossel */
 
 /* Seção: cursos */
@@ -231,7 +270,7 @@ header {
 
 /* Estilo para o botão */
 .button {
-    background-color: #F97E7E;
+    background-color: #DB7373;
     padding: 1.5vw;
     border-radius: 20vw;
     width: fit-content;
@@ -241,11 +280,18 @@ header {
     font-size: 16px;
     font-family: "NextFont";
 }
+
+.button:hover {
+    background-color: white;
+    transition: 0.5s;
+    color: #DB7373;
+}
 /* Fim da Seção: cursos */
 
 /* Footer será igual em todas as páginas */
 footer {
     display: flex;
+    font-family: "Soul";
 }
 
 #guias {
@@ -293,45 +339,14 @@ footer {
     color: white;
 }
 
+#contatos i:hover {
+    color: #DB7373;
+}
+
 #direitos {
     background: linear-gradient(90deg, rgb(255, 55, 55) 10%, #305ff7 90%), url(imgs/bg\ biblio.png);
     padding: 0.5vw;
     text-align: center;
     color: white;
-}
-
-/* começando o carrossel */
-.carrossel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.carrosel-slide:first-child {
-    display: block;
-}
-
-.carrossel-slide img {
-    display: inline-block;
-    width: 100%;
-}
-
-#prevBtn,
-#nextBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-#prevBtn {
-    left: 10px;
-}
-
-#nextBtn {
-    right: 10px;
+    font-family: "Dream Orphans";
 }

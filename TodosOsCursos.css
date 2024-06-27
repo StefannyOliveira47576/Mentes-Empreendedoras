@@ -1,3 +1,15 @@
+/* CORES:
+Azul Escuro: 193894
+Azul Claro: 7C9EDC
+Laranja: FF8D0A
+Laranja claro: FDDFAF
+Amarelo: FFFFAC
+
+Vermelho: DB7373
+Cinza Escuro: 676767
+Cinza: 4F4F4F*/
+
+
 /* Seção: cursos */
 #cursos {
     background-color: #193894;
@@ -27,19 +39,23 @@
     display: flex;
     justify-content: right;
     gap: 1vw;
+    
 }
 
 #barra-pesquisa input[type=text] {
     width: 20vw;
+    background-color: #FF8D0A;
     border: none;
     border-radius: 0.5vw;
     box-sizing: border-box;
     /* Garante que o padding não aumente o tamanho total */
+    color: white;
+
 }
 
 #barra-pesquisa button {
     padding: 0.6vw;
-    background-color: #ccc;
+    background-color: #FF8D0A;
     border: none;
     cursor: pointer;
     border-radius: 0.5vw;
@@ -47,6 +63,7 @@
 
 #barra-pesquisa button i {
     font-size: 14px;
+    color: white;
 }
 /* Fim da Estilização da Barra */
 
