@@ -343,6 +343,10 @@ footer {
     color: #DB7373;
 }
 
+.pag-final:hover {
+    color: #DB7373;
+}
+
 #direitos {
     background: linear-gradient(90deg, rgb(255, 55, 55) 10%, #305ff7 90%), url(imgs/bg\ biblio.png);
     padding: 0.5vw;
