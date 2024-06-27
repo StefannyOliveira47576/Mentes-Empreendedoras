@@ -7,7 +7,7 @@ var span = document.getElementsByClassName("close")[0];
 // Quando o usuário clicar no botão, abrir o modal e carregar o conteúdo da Página 2
 btn.onclick = function () {
     modal.style.display = "block";
-    fetch('adm.html')
+    fetch('Cursos (Modal)/Adm.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('modal-body').innerHTML = data;
