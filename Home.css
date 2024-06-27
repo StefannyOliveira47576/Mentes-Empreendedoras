@@ -114,7 +114,6 @@ header {
 #bloco-header button i {
     margin-right: 7px;
 }
-
 /* Fim do Header */
 
 /* Começando o carrossel */
@@ -154,8 +153,6 @@ header {
   .next-btn {
     right: 10px;
   }
-  
-
 /* Fim do Carrossel */
 
 /* Seção: cursos */
@@ -178,6 +175,7 @@ header {
     font-size: 35px;
     color: #7C9EDC;
     font-family: "NextFont";
+    width: 70vw;
 }
 
 /* Caixas do curso */
@@ -277,7 +275,7 @@ footer {
 }
 
 #redes {
-    display: flex;
+    display: inline-flex;
     padding: 4vw 6vw;
     background-color: #676767;
     color: white;
