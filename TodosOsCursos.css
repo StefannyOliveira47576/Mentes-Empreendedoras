@@ -50,7 +50,7 @@ Cinza: 4F4F4F*/
     box-sizing: border-box;
     /* Garante que o padding não aumente o tamanho total */
     color: white;
-
+    padding-left: 10px;
 }
 
 #barra-pesquisa button {
