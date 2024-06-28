@@ -44,8 +44,8 @@ Cinza: 4F4F4F*/
 
 #barra-pesquisa input[type=text] {
     width: 20vw;
-    background-color: #FF8D0A;
-    border: none;
+    background-color: rgb(255, 255, 255);
+    border: solid#FF8D0A;
     border-radius: 0.5vw;
     box-sizing: border-box;
     /* Garante que o padding não aumente o tamanho total */
