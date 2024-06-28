@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentes Empreendedoras | Academia</title>
     <link rel="stylesheet" href="Home.css">
-    <link rel="stylesheet" href="styleCursos.css">
+    <link rel="stylesheet" href="TodosOsCursos.css">
+    <link rel="shortcut icon" href="imagens/Logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8e63921953.js" crossorigin="anonymous"></script>
-    <!-- Adicione este link no head do seu documento HTML para importar o Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
         <div id="bloco-header">
-            <img src="imagens/Placeholder.jpg" alt="Logo da empresa">
-
+            <img src="imagens/Logo.png" alt="Logo da empresa">
             <nav>
                 <ul class="menu">
-                    <li><a href>HOME</a></li>
-                    <li><a href="Cursos/adm.html">CURSOS GRATUITOS</a></li>
-                    <li><a href="">SOBRE</a></li>
+                    <li><a href="Home.html" target="_blank">HOME</a></li>
+                    <li><a href="#cursos" target="_blank">CURSOS GRATUITOS</a></li>
+                    <li><a href="Sobre/index.html" target="_blank">SOBRE</a></li>
                 </ul>
             </nav>
 
@@ -29,16 +29,9 @@
                 <button><i class="fa-solid fa-user"></i>Login</button>
             </a>
         </div>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Pesquisar curso..." onkeyup="filterCourses()">
-            <button type="button" onclick="filterCourses()">
-                <i class="fa fa-search"></i> <!-- Ícone de lupa do Font Awesome -->
-            </button>
-        </div>
-        
-        <!-- <input type="text" id="searchInput" placeholder="Pesquisar curso..." onkeyup="filterCourses()"> -->
     </header>
-<!-- Aqui criei uma div para receber a pagina em poupup modal -->
+
+    <!-- Modal -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -47,6 +40,7 @@
             </div>
         </div>
     </div>
+    <!-- Fim do Modal -->
 
     <section id="cursos">
         <div class="titulo">
@@ -54,7 +48,15 @@
             <p>Construa seu futuro da melhor maneira!</p>
         </div>
 
-        <main class="course-container">
+        <div id="barra-pesquisa">
+            <input type="text" id="searchInput" placeholder="Pesquisar curso..." onkeyup="filterCourses()">
+            <button type="button" onclick="filterCourses()">
+                <i class="fa fa-search"></i> <!-- Ícone de lupa do Font Awesome -->
+            </button>
+        </div>
+        <!-- <input type="text" id="searchInput" placeholder="Pesquisar curso..." onkeyup="filterCourses()"> -->
+
+        <div class="container-card">
             <div class="div-card show">
                 <i class="fas fa-briefcase"></i>
                 <h2>Administração</h2>
@@ -97,30 +99,42 @@
                 <p><strong>Carga Horária:</strong> 25 horas</p>
                 <button id="openModalBtnMd">Saiba Mais</button>
             </div>
-        </main>
-
-        <!-- <a href><button class="btn_mostraCursos">Mostrar todos os cursos</button></a> -->
+        </div>
     </section>
     </main>
 
+    <!-- Igual em todas as páginas -->
     <footer>
         <div id="guias">
             <div>
                 <a href="Política/Política.html">
-                 
+                    <i class="fa-solid fa-shield-halved"></i>
                     <p>Políticas de Privacidade</p>
                 </a>
             </div>
 
             <div>
-                <a href="Sobre/index.html">
+                <a href="Perguntas Frequentes/perguntas.html">
                     <i class="fa-solid fa-question"></i>
                     <p>Perguntas Frequentes</p>
                 </a>
             </div>
         </div>
 
+        <div id="redes">
+            <div class="text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Autem magnam dolorem error consequuntur
+                    excepturi asperiores reprehenderit officia maxime vitae
+                    voluptas, eligendi amet recusandae quidem
+                    sequi consequatur et earum, saepe mollitia.</p>
 
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Autem magnam dolorem error consequuntur
+                    excepturi asperiores reprehenderit officia maxime vitae
+                    voluptas, eligendi amet recusandae quidem
+                    sequi consequatur et earum, saepe mollitia.</p>
+            </div>
 
             <div id="contatos">
                 <a href><i class="fa-brands fa-facebook"></i></a>
@@ -132,15 +146,19 @@
                 <a href><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
+
     </footer>
 
-        
+    <div id="direitos">
+        <p>Copyright © 2024 | Todos os direitos reservados</p>
+    </div>
+
     <script>
         function filterCourses() {
             var input, filter, cards, cardContainer, h2, i, txtValue;
             input = document.getElementById('searchInput');
             filter = input.value.toUpperCase();
-            cardContainer = document.getElementsByClassName('course-container')[0];
+            cardContainer = document.getElementsByClassName('container-card')[0];
             cards = cardContainer.getElementsByClassName('div-card');
 
             for (i = 0; i < cards.length; i++) {
@@ -155,11 +173,7 @@
         }
     </script>
 
-    <div id="direitos">
-        <p>Copyright © 2024 | Todos os direitos reservados</p>
-    </div>
-
-    <script src="js.js"></script>
+    <script src="Modal.js"></script>
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -171,6 +185,6 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
-   
 </body>
+
 </html>
