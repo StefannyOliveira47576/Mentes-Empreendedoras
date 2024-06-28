@@ -329,6 +329,16 @@ footer {
     align-items: center;
 }
 
+#redes .text {
+    margin-left: 50px;
+    text-align: justify;
+}
+
+#redes .text h2{
+    text-align: center;
+    font-size: 1.2em;
+}
+
 #contatos {
     display: flex;
     gap: 20px;
