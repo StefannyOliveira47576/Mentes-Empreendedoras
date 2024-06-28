@@ -351,6 +351,7 @@ footer {
 
 #contatos i:hover {
     color: #DB7373;
+    transition: 0.9s;
 }
 
 .pag-final:hover {
