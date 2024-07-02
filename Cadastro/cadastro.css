@@ -98,30 +98,3 @@ form input[type=submit] {
 .form-container {
     opacity: 75%;
 }
-
-@media screen and (max-width: 480px) {
-
-}
-
-
-@media screen and (max-width : 720px) {
-
-    .form-container {
-        padding: 5vh;
-    }
-
-    form h1 {
-        font-size: 3vh;
-        text-align: center;
-    }
-
-
-    form p {
-        font-size: 2vw;
-    }
-
-    #coisa {
-        font-size: 1.2rem;
-    }
-
-}

@@ -45,22 +45,22 @@ h3 span {
     color: rgb(57, 57, 206);
 }
 
-#fundador{
+.textos{
     padding: 2rem;
 }
 
-#fundador p {
+.textos p {
     text-align: justify;
     font-size: 1.5rem;
     margin: 0 29px;
     line-height: 35px;
 }
  
-#historia{
+.textos {
     padding: 2rem;
 }
 
-#historia p {
+.textos p {
     text-align: justify;
     font-size: 1.5rem;
     margin: 0 29px;
@@ -248,4 +248,3 @@ margin: auto;
     text-align: center;
     color: white;
 }
-
