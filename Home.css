@@ -30,6 +30,11 @@ Cinza: 4F4F4F*/
     src:
         local("Dream Orphans"),
         url(Fontes/Dream\ Orphans.otf) format('opentype');
+        
+        src:
+        local("Dream Orphans Bold"),
+        url(Fontes/Dream\ Orphans\ Bd.otf) format('opentype');
+        font-weight: bold;
 }
 
 @font-face {
@@ -287,6 +292,64 @@ header {
     color: #DB7373;
 }
 /* Fim da Seção: cursos */
+
+/* Começo da Seção: Avalicação */
+#avalicacao {
+    padding: 5vw;
+    background-color: #FFFFAC;
+}
+
+.titulo strong {
+    font-family: "Dream Orphans";
+    font-weight: bold;
+}
+
+#avalia {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2vw;
+}
+
+.ava-cubos {
+background-color: white;
+display: flex;
+width: 22vw;
+padding: 2vw;
+gap: 1.5vw;
+align-items: center;
+margin: 1.8vw;
+}
+
+.ava-cubos i {
+font-size: 50px;
+}
+
+.ava-cubos div h3 {
+    text-align: left;
+    margin-left: 1.8vw;
+    margin-bottom: 3px;
+}
+
+.ava-cubos p {
+text-align: justify;
+}
+
+.estrelas {
+    justify-content: center;
+    display: flex;
+    color: #193894;
+    margin-top: 8px;
+}
+
+.estrelas i {
+font-size: 30px;
+}
+
+.estrelas span {
+    color: #7C9EDC;
+}
+/* Fim da Seção: Avalicação */
 
 /* Footer será igual em todas as páginas */
 footer {
