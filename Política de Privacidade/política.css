@@ -15,6 +15,62 @@ Cinza: DB7373 */
     text-decoration: none;
 }
 
+#caixa-suprema {
+    margin: 2vw 8vw;
+    padding: 2vw;
+    background-color: white;
+    border-radius: 2vw;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: "NextFont";
+    font-size: 40px;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+    border: solid black 2px;
+    margin-bottom: 2vw;
+}
+
+h2 {
+    margin-left: 6vw;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-family: "NextFont";
+
+}
+
+section {
+padding: 5vw;
+margin-bottom: 20px;
+}
+
+section p {
+    text-align: justify;
+    font-size: 22px;
+    line-height: 40px;
+    font-family: "Soul";
+}
+
+.list {
+    margin-left: 1.5vw;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+h3 {
+    margin-left: 6vw;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-size: 25px;
+    font-family: "NextFont";
+}
+
 /* header {
     padding: 3vw 10vw;
     background-color: #193894;
