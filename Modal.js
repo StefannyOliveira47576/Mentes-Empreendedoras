@@ -65,7 +65,7 @@ let spanPd = document.getElementsByClassName("close")[0];
 // Quando o usuário clicar no botão, abrir o modal e carregar o conteúdo da Página 2
 btnPd.onclick = function () {
     modalPd.style.display = "block";
-    fetch('Cursos(Modal)/RH.html')
+    fetch('Cursos(Modal)/Progracao.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('modal-body').innerHTML = data;
@@ -94,7 +94,7 @@ let spanDs = document.getElementsByClassName("close")[0];
 // Quando o usuário clicar no botão, abrir o modal e carregar o conteúdo da Página 2
 btnDs.onclick = function () {
     modalDs.style.display = "block";
-    fetch('Cursos(Modal)/RH.html')
+    fetch('Cursos(Modal)/design.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('modal-body').innerHTML = data;
@@ -122,7 +122,7 @@ let spanMk = document.getElementsByClassName("close")[0];
 // Quando o usuário clicar no botão, abrir o modal e carregar o conteúdo da Página 2
 btnMk.onclick = function () {
     modalMk.style.display = "block";
-    fetch('Cursos(Modal)/RH.html')
+    fetch('Cursos(Modal)/marketing.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('modal-body').innerHTML = data;
@@ -151,7 +151,7 @@ let spanMd = document.getElementsByClassName("close")[0];
 // Quando o usuário clicar no botão, abrir o modal e carregar o conteúdo da Página 2
 btnMd.onclick = function () {
     modalMd.style.display = "block";
-    fetch('Cursos(Modal)/RH.html')
+    fetch('Cursos(Modal)/moda.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('modal-body').innerHTML = data;
