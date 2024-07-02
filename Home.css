@@ -319,6 +319,7 @@ padding: 2vw;
 gap: 1.5vw;
 align-items: center;
 margin: 1.8vw;
+box-shadow: 8px 10px 1px rgba(0, 0, 0, 0.603);
 }
 
 .ava-cubos i {
