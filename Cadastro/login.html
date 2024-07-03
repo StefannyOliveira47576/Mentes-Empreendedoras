@@ -24,17 +24,16 @@
                 </ul>
             </nav>
 
-            <a href="/Home.html">
+            <a href="cadastro.html">
                 <button><i class="fa-solid fa-user"></i>Voltar</button>
             </a>
         </div>
     </header>
 
     <main>
-        <!-- <form id="cadastroForm" method="POST"></form> -->
         <section id="form-container">
-            <form id="forms" method="POST">
-                <h1>Cadastre-se para obter comunicados de cursos gratuitos</h1>
+            <form id="forms">
+                <h1>Faça login para voltar a sua jornada!</h1>
 
                 <p>Preencha as informações abaixo para facilitar nossa comunicação</p>
 
@@ -42,35 +41,24 @@
 
                 <div id="login">
                     <div>
-                        <label for="nome">NOME</label>
-                        <input type="text" name="nome" required placeholder="Digite seu nome">
-                    </div>
-
-                    <div>
                         <label for="email">E-MAIL</label>
-                        <input type="email" name="email" required placeholder="Email">
+                        <input type="email" required>
                     </div>
 
                     <div>
                         <label for="senha">SENHA</label>
-                        <input type="password" name="senha" required placeholder="Senha">
-                    </div>
-
-                    <div>
-                        <label for="telefone">TELEFONE</label>
-                        <input type="number" name="telefone" required placeholder="Telefone">
+                        <input type="password" required>
                     </div>
 
                 </div>
 
                 <div id="botoes">
                     <div class="btn">
-                        <a href="login.html"><button>Já possuo Login</button></a>
+                        <a href="cadastro.html"><button>Ainda não possuo login</button></a>
                     </div>
 
                     <div class="btn">
                         <input type="submit" value="ENVIAR" id="coisa">
-                        
                     </div>
                 </div>
             </form>
@@ -115,32 +103,7 @@
                 <a href><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
-        <script>
-            document.getElementById('forms').addEventListener('submit', function(event) {
-                event.preventDefault();
-                const form = event.target;
-                const formData = new FormData(form);
-    
-                fetch('cadastro.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.status === 'success') {
-                        alert(data.message);
-                        form.reset();
-                        window.location.href = 'cadastro.html'; // Redirecionar para a página de sucesso
-                    } else {
-                        alert(data.message);
-                    }
-                })
-                .catch(error => {
-                    alert('Ocorreu um erro ao processar o seu pedido.');
-                    console.error('Error:', error);
-                });
-            });
-        </script>
+
     </footer>
 
     <div id="direitos">

@@ -87,7 +87,25 @@ margin-top: 20px;
     font-family: "NextFont";
 }
 
+.btn button {
+    background-color: #DB7373;
+    padding: 1vw 2vw;
+    border-radius: 20vw;
+    width: auto;
+    color: white;
+    border: none;
+    font-family: "NextFont";
+}
+
 .btn input:hover {
+    background-color: white;
+    transition: 0.5s;
+    padding: 1.2vw 2vw;
+    color: #DB7373;
+    border: solid #DB7373;
+}
+
+.btn button:hover {
     background-color: white;
     transition: 0.5s;
     padding: 1.2vw 2vw;
