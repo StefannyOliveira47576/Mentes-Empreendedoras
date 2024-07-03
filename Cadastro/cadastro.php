@@ -8,20 +8,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Armazenar os dados (exemplo: em um arquivo)
     $data = "$nome, $email, $senha, $telefone\n";
-    file_put_contents("cadastros.txt", $data, FILE_APPEND);
-
-    // Enviar email de confirmação
-    $to = $email;
-    $subject = "Confirmação de Cadastro";
-    $message = "Olá $nome,\n\nObrigado por se cadastrar. Aqui estão seus dados:\n\nNome: $nome\nEmail: $email\nTelefone: $telefone\n\nAtenciosamente,\nEquipe";
-    $headers = "From: no-reply@seusite.com";
-
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Cadastro realizado com sucesso. Um email de confirmação foi enviado.";
+    
+    if (file_put_contents("cadastros.txt", $data, FILE_APPEND)) {
+        echo json_encode(["status" => "success", "message" => "Cadastro realizado com sucesso."]);
     } else {
-        echo "Ocorreu um erro ao enviar o email de confirmação.";
+        echo json_encode(["status" => "error", "message" => "Ocorreu um erro ao salvar os dados."]);
     }
 } else {
-    echo "Método de requisição inválido.";
+    echo json_encode(["status" => "error", "message" => "Método de requisição inválido."]);
 }
 ?>
