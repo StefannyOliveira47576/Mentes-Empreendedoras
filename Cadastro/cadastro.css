@@ -15,21 +15,58 @@ Cinza: DB7373 */
 }
 
 body {
-    background: linear-gradient(180deg, #193894 10%, #193894d6 60%), url(imagens/teste.jfif);
+    background: linear-gradient(180deg, #193894 1%, #1938946d 60%), url(imagens/teste.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #form-container {
     background-color: white;
-    border-radius: 2rem;
-    padding: 2vw;
-    width: fit-content;
+    width: 60vw;
     margin: 10vw auto;
+    border-radius: 3vw;
+    padding: 2vw 5vw;
 }
 
-#forms {
+#forms h1 {
+    color: #193894;
+    font-family: "NextFont";
+    font-size: 30px;
+}
 
+#forms p {
+    color: #7C9EDC;
+    margin-bottom: 4px;
+    font-family: "Soul";
+    font-size: 20px;
+}
 
+hr {
+    width: 80%;
+    margin: auto;
+    border: solid black 2px;
+    margin-bottom: 2vw;
+}
+
+#login {
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#login label {
+font-family: "NextFont";
+font-size: 20px;
+color: #193894;
+}
+
+#login input {
+padding: 0.5vw 2vw;
+width: 20vw;
+border-radius: 20vw;
+border: 2px solid #FF8D0A;
+border-color: #FF8D0A;
+margin-bottom: 1vw;
 }
