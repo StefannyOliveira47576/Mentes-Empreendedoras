@@ -212,3 +212,61 @@ ul li {
     font-size: 1.2em;
     color: white;
 }
+
+@media (max-width: 768px) {
+    #cursos {
+        padding: 5vw;
+    }
+
+    .titulo h2 {
+        font-size: 6vw;
+    }
+
+    .titulo p {
+        font-size: 12vw;
+        width: 90vw;
+    }
+
+    #barra-pesquisa {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #barra-pesquisa input[type=text] {
+        width: 90%;
+        padding-left: 5%;
+        margin-bottom: 5%;
+    }
+
+    #barra-pesquisa button {
+        width: 40%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    .container-card {
+        padding: 5vw;
+    }
+
+    .div-card {
+        width: 90%;
+        max-width: none;
+    }
+
+    .div-card i {
+        font-size: 8vw;
+    }
+
+    .div-card h2 {
+        font-size: 8vw;
+    }
+
+    .div-card p {
+        font-size: 6vw;
+    }
+
+    .div-card button {
+        padding: 3vw 5vw;
+        font-size: 4vw;
+    }
+}

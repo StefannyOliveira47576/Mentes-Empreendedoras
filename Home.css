@@ -431,3 +431,46 @@ footer {
     font-family: "Dream Orphans";
 }
 
+@media (max-width: 768px) {
+
+    header {
+        padding: 8vw 5vw;
+    }
+
+    #bloco-header {
+        padding: 4vw;
+    }
+
+    #bloco-header img {
+        width: 25%;
+        padding: 8px;
+    }
+
+    .menu {
+        gap: 3vw;
+    }
+
+    #bloco-header button {
+        padding: 0.5rem;
+        width: 25vw;
+    }
+
+    .titulo p {
+        font-size: 24px;
+        width: 90vw;
+    }
+
+    .div-card {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .button {
+        padding: 1.5vw;
+        margin-left: 0;
+    }
+
+    .ava-cubos {
+        width: 100%;
+    }
+}
