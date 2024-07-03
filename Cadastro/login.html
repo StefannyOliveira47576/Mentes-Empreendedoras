@@ -24,7 +24,7 @@
                 </ul>
             </nav>
 
-            <a href="/Home.html">
+            <a href="cadastro.html">
                 <button><i class="fa-solid fa-user"></i>Voltar</button>
             </a>
         </div>
@@ -33,13 +33,18 @@
     <main>
         <section id="form-container">
             <form id="forms">
-                <h1>Faça seu login para continuar sua jornada!</h1>
+                <h1>Cadastre-se para obter comunicados de cursos gratuitos</h1>
 
                 <p>Preencha as informações abaixo para facilitar nossa comunicação</p>
 
                 <hr>
 
                 <div id="login">
+                    <div>
+                        <label for="nome">NOME</label>
+                        <input type="text" required>
+                    </div>
+
                     <div>
                         <label for="email">E-MAIL</label>
                         <input type="email" required>
@@ -50,11 +55,16 @@
                         <input type="password" required>
                     </div>
 
+                    <div>
+                        <label for="telefone">TELEFONE</label>
+                        <input type="number" required>
+                    </div>
+
                 </div>
 
                 <div id="botoes">
                     <div class="btn">
-                        <a href="login.html"><input type="submit" value="Já possuo Login" id="coisa"></a>
+                        <input type="submit" value="Já possuo Login" id="coisa">
                     </div>
 
                     <div class="btn">
